@@ -1,0 +1,9 @@
+{
+  "name": "browser-extension-template",
+  "version": "0.0.1",
+  "options_page": "html/options.html",
+  "action": {
+    "default_popup": "html/popup.html"
+  },
+  "manifest_version": 3
+}

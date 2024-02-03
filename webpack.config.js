@@ -1,3 +1,4 @@
+const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 let options = {
@@ -6,6 +7,7 @@ let options = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'scripts/[name].bundle.js',
+    clean: true,
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -29,7 +31,7 @@ let options = {
 };
 
 if (options.mode === 'development') {
-  options.devtool = 'cheap-module-eval-source-map';
+  options.devtool = 'cheap-module-source-map';
 }
 
 module.exports = options;
