@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "npm run build:chrome && npm run build:firefox",
+    "build:chrome": "cross-env BROWSER=chrome webpack --config webpack.config.js",
+    "build:firefox": "cross-env BROWSER=firefox webpack --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production npm run build"
   },
   "devDependencies": {
