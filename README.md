@@ -25,7 +25,7 @@ Steps:
 3. Click on "Load unpacked" under Extensions
 4. Select the Chrome build folder: `build/chrome`
 
-Note: you will need to reload the extension whenever you make a change to the source.
+**Note:** you will need to reload the extension whenever you make a change to the source.
 The files will rebuild as long as `npm run build:chrome` is still running, but the extension won't reload until you manually reload it from the extensions page.
 
 ### Installing in Firefox
@@ -38,12 +38,12 @@ Steps:
 3. Click on the "Load Temporary Add-on" button
 4. Select the manifest file in the Firefox build folder: `build/firefox/manifest.json`
 
-Note: you will need to reload the extension whenever you make a change to the source.
+**Note:** you will need to reload the extension whenever you make a change to the source.
 The files will rebuild as long as `npm run build:firefox` is still running, but the extension won't reload until you manually reload it from the extensions page.
 
-Note: the extension will need to be re-added whenever Firefox restarts.
+**Note:** the extension will need to be re-added whenever Firefox restarts.
 
-Note: the "manifest.firefox.json" file is set to use "manifest_version" 2.
+**Note:** the "manifest.firefox.json" file is set to use "manifest_version" 2.
 It isn't (currently?) possible to ask for some permissions during install or set that some permissions are required in version 3.
 
 ## Structure
