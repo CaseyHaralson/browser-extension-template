@@ -33,7 +33,7 @@ The files will rebuild as long as `npm run build:chrome` is still running, but t
 Steps:
 
 0. Run the dev build for the browser, watch for changes, and rebuild whenever a file changes (or you can use the prod build from above and can skip this step): `npm run build:firefox`
-1. Go to the about debugging page: [about:debugging](about:debugging)
+1. Go to the about debugging page: [about:debugging]({{ 'about:debugging' }})
 2. Click on the "This Firefox" option
 3. Click on the "Load Temporary Add-on" button
 4. Select the manifest file in the Firefox build folder: `build/firefox/manifest.json`
