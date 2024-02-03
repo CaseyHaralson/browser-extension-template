@@ -1,7 +1,9 @@
 function load() {
   const target = document.getElementById('content_target');
-  target.innerText =
-    'this content from options.ts file (find me at src/scripts/options.ts)';
+  if (target) {
+    target.innerText =
+      'this content from options.ts file (find me at src/scripts/options.ts)';
+  }
 }
 
 load();

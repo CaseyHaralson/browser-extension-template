@@ -1,12 +1,13 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "sourceMap": false,
     "rootDir": "src",
     "outDir": "build",
-    "composite": true,
-    "declaration": true,
-    "sourceMap": true,
-    "isolatedModules": true,
-    "moduleResolution": "NodeNext"
+    "noEmitOnError": true,
+    "lib": ["ES2021.String", "DOM"]
   }
 }
