@@ -8,6 +8,6 @@
     "rootDir": "src",
     "outDir": "build",
     "noEmitOnError": true,
-    "lib": ["ES2021.String", "DOM"]
-  }
+    "lib": ["ES2021.String", "DOM"],
+  },
 }
