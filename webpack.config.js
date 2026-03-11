@@ -43,7 +43,6 @@ let options = {
 
 if (options.mode === 'development') {
   options.devtool = 'cheap-module-source-map';
-  options.watch = true;
 }
 
 module.exports = options;
